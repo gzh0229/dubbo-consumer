@@ -13,6 +13,7 @@ public class App {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer.xml");
         context.start();
         ProviderService providerService = (ProviderService) context.getBean("providerService");
+        providerService.SayHi();
         String str = providerService.SayHello("hello");
         System.out.println(str);
         System.in.read();

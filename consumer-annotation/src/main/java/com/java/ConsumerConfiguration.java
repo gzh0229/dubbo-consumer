@@ -40,7 +40,7 @@ public class ConsumerConfiguration {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setProtocol("zookeeper");
         registryConfig.setAddress("localhost");
-        registryConfig.setPort(2181);
+        registryConfig.setPort(2182);
         return registryConfig;
     }
 
